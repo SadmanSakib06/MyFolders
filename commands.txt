@@ -1,0 +1,12 @@
+!nvcc -arch=sm_75 phonebook_search.cu -o output
+
+!time ./output
+
+
+
+MPI-----------------------
+
+
+
+mpic++ -o output phonebook_search.cpp
+mpirun -np 3 ./output phonebook2.txt (more textfiles if any) akhter
