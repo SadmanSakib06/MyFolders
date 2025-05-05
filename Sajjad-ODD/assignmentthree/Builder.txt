@@ -1,0 +1,7 @@
+ 1️⃣ Car Customization System (Builder Pattern):
+We use the Builder Design Pattern to create car objects step by step, allowing flexible configuration of attributes like model name, engine type, color, transmission, sunroof, and infotainment system.
+
+✅ Builder pattern helps construct complex objects by chaining setter methods without needing multiple constructors.
+
+👉 Why?
+It simplifies object creation when many optional parameters exist.

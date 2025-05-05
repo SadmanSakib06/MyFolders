@@ -1,0 +1,7 @@
+3️⃣ Notification System (Factory Pattern):
+We use the Factory Design Pattern to create different types of notifications (SMS, Email, Push) based on input. The factory decides which notification object to instantiate.
+
+✅ Factory pattern centralizes object creation logic and hides instantiation details from the client.
+
+👉 Why?
+It makes the system scalable and easier to maintain when adding new notification types

@@ -1,0 +1,7 @@
+ 2️⃣ Money Withdrawal Authorization (Chain of Responsibility Pattern):
+We use the Chain of Responsibility Design Pattern to pass a withdrawal request through a chain of approvers (Cashier → Senior Officer → Manager). Each handler checks if it can approve; if not, it forwards the request to the next.
+
+✅ This pattern decouples the sender of a request from its receivers, giving multiple objects a chance to handle the request.
+
+👉 Why?
+It models hierarchical authorization without hardcoding the decision flow.

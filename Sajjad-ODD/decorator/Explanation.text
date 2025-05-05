@@ -1,0 +1,23 @@
+This is a very common real-world example of how decorators work: dynamically adding behavior or features to an object at runtime without changing its class.
+
+🏗️ Problem:
+Suppose we have a base pizza (e.g., Margherita), and we want to add toppings (e.g., Cheese, Olives, Pepperoni, etc.), but we don’t want to create subclasses like:
+
+    CheeseMargheritaPizza
+
+    OliveCheeseMargheritaPizza
+
+    PepperoniOliveCheeseMargheritaPizza
+
+👉 The number of combinations will grow exponentially if we subclass every possible variant.
+
+✅ Solution: Use Decorator Pattern!
+We’ll create:
+
+    A base Pizza interface.
+
+    Concrete pizza class (e.g., Margherita).
+
+    Abstract PizzaDecorator that implements Pizza.
+
+    Concrete decorators (e.g., CheeseDecorator, OliveDecorator).

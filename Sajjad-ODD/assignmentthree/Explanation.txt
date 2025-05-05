@@ -1,0 +1,19 @@
+👉 Short answer:
+We put CarBuilder inside the Car class (as a static nested class) because it’s a common practice in the Builder Design Pattern to encapsulate the builder inside the product class for logical grouping and better encapsulation.
+
+🎯 Is it required? Is it part of the design pattern strategy?
+✅ No — it's not mandatory for the Builder Pattern to be implemented as an inner class.
+
+✅ But it's a very common and recommended approach in Java to put the builder inside the class it's building, because:
+
+Builder is tightly coupled to the product.
+
+You won’t use CarBuilder to build anything else but Car.
+
+Encapsulation:
+
+Keeps CarBuilder hidden from the rest of the package if needed (can use private or protected visibility).
+
+Namespace management:
+
+Avoids cluttering the package with a separate CarBuilder class.

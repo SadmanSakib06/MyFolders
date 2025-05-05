@@ -1,0 +1,10 @@
+1. Compile all Java files inside the package folder:
+
+   javac packageName/*.java
+
+2. Run the Java file containing the main method (use fully qualified class name):
+
+   java packageName.MainClass
+
+✅ In a single .java file, only one public class is allowed (the one matching the filename), and the others should have default (package-private) access (i.e., no public keyword).
+✅ If each class is in its own file, then they can each be declared public.
